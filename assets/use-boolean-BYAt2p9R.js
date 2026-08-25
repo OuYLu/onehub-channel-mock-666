@@ -1,0 +1,1 @@
+import{n as e,s as t}from"./jsx-runtime-D1sSv8GP.js";var n=t(e());function r(e=!1){let[t,r]=(0,n.useState)(e),i=(0,n.useCallback)(()=>{r(!0)},[]),a=(0,n.useCallback)(()=>{r(!1)},[]),o=(0,n.useCallback)(()=>{r(e=>!e)},[]);return(0,n.useMemo)(()=>({value:t,onTrue:i,onFalse:a,onToggle:o,setValue:r}),[t,i,a,o,r])}export{r as t};

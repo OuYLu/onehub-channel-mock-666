@@ -1,0 +1,1 @@
+import{_ as e}from"./ButtonBase-gQ0LnmCL.js";import{t}from"./ownerDocument-Zu5Vm1vv.js";function n(e,t=166){let n;function r(...r){clearTimeout(n),n=setTimeout(()=>{e.apply(this,r)},t)}return r.clear=()=>{clearTimeout(n)},r}function r(e){return t(e).defaultView||window}var i=e;export{r as n,n as r,i as t};

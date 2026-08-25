@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" role="img" aria-label="Kapon">
+  <line x1="13" y1="9.5" x2="13" y2="30.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13 20C15 13.5 24.5 12 27.4 15.6 29.4 18.2 23.5 20 13 20" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 20C15 26.5 24.5 28 27.4 24.4 29.4 21.8 23.5 20 13 20" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

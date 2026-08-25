@@ -1,0 +1,1 @@
+import{n as e,s as t}from"./jsx-runtime-D1sSv8GP.js";var n=t(e());function r(e,t){return n.isValidElement(e)&&t.indexOf(e.type.muiName??e.type?._payload?.value?.muiName)!==-1}export{r as t};
