@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-D1sSv8GP.js";import{I as t}from"./index-rtLm-qHg.js";var n=e(),r=t((0,n.jsx)(`path`,{d:`M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z`}),`KeyboardArrowLeft`),i=t((0,n.jsx)(`path`,{d:`M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z`}),`KeyboardArrowRight`);export{r as n,i as t};
