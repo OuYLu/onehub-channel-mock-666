@@ -1,26 +1,13 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>渠道管理 Mock</title>
-  <style>
-    *{box-sizing:border-box} body{margin:0;background:#f7f8f8;color:#1f2937;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}.top{height:64px;background:#fff;border-bottom:1px solid #e7ebea;display:flex;align-items:center;padding:0 34px;gap:14px}.brand{font-size:20px;font-weight:750;color:#172126}.brand b{color:#07996b;margin-right:7px}.crumb{color:#7a8586;border-left:1px solid #dde5e2;padding-left:18px}.shell{max-width:1520px;margin:24px auto;padding:0 24px}.title{font-size:22px;font-weight:750;margin:0 0 18px}.card{background:#fff;border:1px solid #e4ece8;border-radius:14px;box-shadow:0 1px 3px #00000008}.filters{padding:20px;display:grid;grid-template-columns:repeat(5,minmax(160px,1fr));gap:12px;border-bottom:1px solid #edf1ef}.input{height:46px;border:1px solid #dce4e1;border-radius:9px;padding:12px;color:#75807e;background:#fff}.actions{display:flex;justify-content:flex-end;gap:10px;padding:16px 20px}.btn{border:1px solid #b9e1d3;background:#fff;color:#078f67;border-radius:9px;padding:10px 16px;font-weight:650;cursor:pointer}.btn.primary{background:#07996b;color:#fff;border-color:#07996b}.table{width:100%;border-collapse:collapse;min-width:1060px}.table th{height:56px;text-align:left;background:#f7faf9;color:#43504e;font-weight:700}.table td,.table th{padding:0 16px;border-bottom:1px solid #edf1ef}.table td{height:72px}.scroll{overflow-x:auto}.tag{display:inline-block;padding:4px 8px;border-radius:6px;background:#eaf7f2;color:#078f67;font-weight:650}.tag.gray{background:#f0f2f2;color:#596562}.status{color:#07996b;font-weight:700}.health{width:90px;height:7px;background:#e9efed;border-radius:4px;overflow:hidden;display:inline-block;vertical-align:middle}.health i{display:block;height:100%;background:#10ad7e;border-radius:4px}.menu{position:relative}.dropdown{position:absolute;right:0;top:42px;width:205px;padding:7px;background:#fff;border:1px solid #dfe7e4;border-radius:10px;box-shadow:0 8px 26px #13241d1f;display:none;z-index:2}.dropdown.show{display:block}.item{padding:10px;border-radius:7px;cursor:pointer}.item:hover{background:#f0faf6}.toast{position:fixed;right:22px;top:20px;background:#fff;border-left:4px solid #07996b;box-shadow:0 8px 30px #13241d2b;border-radius:8px;padding:14px 18px;display:none;z-index:3}.toast.show{display:block}.muted{color:#87918f}@media(max-width:900px){.filters{grid-template-columns:repeat(2,1fr)}.shell{padding:0 12px}.top{padding:0 16px}}
-  </style>
-</head>
-<body>
-  <header class="top"><div class="brand"><b>↯</b>开朋 <span class="muted" style="font-weight:500">Kapon</span></div><div class="crumb">渠道管理 / 渠道列表</div></header>
-  <main class="shell"><h1 class="title">渠道列表</h1><section class="card">
-    <div class="filters"><div class="input">渠道类型</div><div class="input">搜索渠道名称</div><div class="input">模型名称</div><div class="input">模型分组</div><div class="input">成本等级</div><div class="input">模型状态：全部绑定</div><div class="input">渠道状态：全部状态</div></div>
-    <div class="actions"><button class="btn">重置</button><button class="btn">刷新</button><button class="btn primary">+ 新建渠道</button></div>
-    <div class="scroll"><table class="table"><thead><tr><th></th><th>ID</th><th>名称</th><th>类型</th><th>成本等级</th><th>模型分组</th><th>渠道状态</th><th>模型优先级</th><th>近10分钟健康度</th><th>操作</th></tr></thead>
-      <tbody><tr><td>▸</td><td>1021</td><td><strong>openrouter-聚合</strong></td><td>OpenAI</td><td><span class="tag">低成本</span></td><td>standard</td><td><span class="status">启用</span></td><td>正常 6 · 观测 1 · 降级 0</td><td><span class="health"><i style="width:82%"></i></span> 82%</td><td><div class="menu"><button class="btn speed">测速 ▾</button><div class="dropdown"><div class="item all">全部测速</div><div class="item model">gpt-4o-mini</div><div class="item model">qwen-max</div><div class="item model">claude-sonnet-4-6</div></div></div></td></tr>
-      <tr><td>▸</td><td>812</td><td><strong>aws-worldclaw-H</strong></td><td>Anthropic</td><td><span class="tag gray">中成本</span></td><td>standard</td><td><span class="status">启用</span></td><td>正常 4 · 观测 0 · 降级 0</td><td><span class="health"><i style="width:96%"></i></span> 96%</td><td><button class="btn">测速</button></td></tr></tbody>
-    </table></div></section></main><div class="toast" id="toast"></div>
-  <script>
-    const menu=document.querySelector('.dropdown'),button=document.querySelector('.speed'),toast=document.querySelector('#toast');
-    button.onclick=()=>menu.classList.toggle('show');
-    document.querySelectorAll('.item').forEach(item=>item.onclick=()=>{menu.classList.remove('show'); const name=item.classList.contains('all')?'全部已启用模型':item.textContent; toast.textContent='测速完成：'+name+'，成功 · 耗时 1.48 秒';toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000)});
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>渠道管理 Mock</title>
+    <script type="module" crossorigin src="/onehub-channel-mock-666/assets/channel-mock-CtgOadl-.js"></script>
+    <link rel="stylesheet" crossorigin href="/onehub-channel-mock-666/assets/channel-mock-2YOAfqmZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
